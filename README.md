@@ -6,6 +6,7 @@ Borrowed from https://github.com/jesperorb/json-server-heroku
 
 * [**Deploy Directly from Git Repo**](#deploy-directly-from-git-repo)
 * [Deploy from file](#deploy-from-file)
+* [To remove the app](#To-remove-the-app)
 
 ## Signup for free tier Azure
 https://azure.microsoft.com/en-ca/free/ 
@@ -59,3 +60,16 @@ Once the app is deployed (this will take a few minutes), open a browser and go t
 Choose **App Services** in the sidebar to the left and the choose your app in the list that appears then go to **Deployment Credentials** to change your password for deployment:<br>
 https://docs.microsoft.com/en-us/azure/app-service/app-service-deployment-credentials
 
+## To remove the app
+
+```PowerShell
+$webappname="mysamplejson123"
+$appserviceplan="BasicAppServicePlan"
+$resourcegroupname="rg1"
+$gitrepo="https://github.com/meatsac/json-server-azure"
+
+az webapp delete --name $webappname --resource-group $resourcegroupname
+az appservice plan delete --name $appserviceplan --resource-group $resourcegroupname --yes
+az group delete -n $resourcegroupname --yes
+```
+Or you can use https://portal.azure.com
