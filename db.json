@@ -1,16 +1,32 @@
 {
-  "posts":[
+  "Employees":[
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
-    }
+	"employeeId": 100,
+	"firstName": "Bob",
+	"lastName": "Smith",
+	"email": "bob.smith@example.com",
+	"hireDate": "2020-10-16"
+}, 
+{
+	"employeeId": 101,
+	"firstName": "Anna",
+	"lastName": "Lane",
+	"email": "anna.lane@example.com",
+	"hireDate": "2019-03-06"
+}, 
+{
+	"employeeId": 102,
+	"firstName": "Pat",
+	"lastName": "Fay",
+	"email": "pat.fay@example.com",
+	"hireDate": "2018-03-06"
+}
   ],
-  "comments" : [
+  "Companies" : [
     {
       "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "Name": "AEY",
+      "Description": "Widget Distributor"
     }
   ]
 }
