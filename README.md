@@ -66,7 +66,6 @@ https://docs.microsoft.com/en-us/azure/app-service/app-service-deployment-creden
 $webappname="mysamplejson123"
 $appserviceplan="BasicAppServicePlan"
 $resourcegroupname="rg1"
-$gitrepo="https://github.com/meatsac/json-server-azure"
 
 az webapp delete --name $webappname --resource-group $resourcegroupname
 az appservice plan delete --name $appserviceplan --resource-group $resourcegroupname --yes
