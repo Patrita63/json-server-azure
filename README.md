@@ -5,6 +5,10 @@
 * [**Create your database**](#create-your-database)
 * [Deploy to **Azure**](#deploy-to-azure)
 
+## Signup for free tier Azure
+https://azure.microsoft.com/en-ca/free/ 
+
+The free Azure Tier allows you to have up to 10 web apps at no cost. Not a bad deal!
 
 ## Create your database
 
@@ -97,3 +101,27 @@ You should be prompted to supply a password, this should be the pass to your acc
 
 Choose **App Services** in the sidebar to the left and the choose your app in the list that appears then go to **Deployment Credentials** to change your password for deployment:<br>
 https://docs.microsoft.com/en-us/azure/app-service/app-service-deployment-credentials
+
+## Deploy Directly from Git Repo
+
+You can also take this repo as is and deploy it directly to Azure in a few minutes.
+
+```PowerShell
+# set app name, app service plan ,resource group and git repo
+$webappname="mysamplejson123"
+$appserviceplan="BasicAppServicePlan"
+$resourcegroupname="rg1"
+$gitrepo="https://github.com/meatsac/json-server-azure"
+
+# create a resource group
+az group create --location centralus --name $resourcegroupname
+
+# create an App Service plan
+az appservice plan create --name $appserviceplan --resource-group $resourcegroupname --sku FREE
+
+# create a Web App
+az webapp create --name $webappname --resource-group $resourcegroupname --plan $appserviceplan
+
+# deploy code from a Git repository
+az webapp deployment source config --name $webappname --resource-group $resourcegroupname --repo-url $gitrepo --branch master --manual-integration
+```
