@@ -4,7 +4,7 @@ Borrowed from https://github.com/jesperorb/json-server-heroku
 
 > Instructions how to deploy the full fake REST API [json-server](https://github.com/typicode/json-server) to various free hosting sites. Should only be used in development purpose but can act as a simpler database for smaller applications.
 
-* [**Deploy Directly from Git Repo**](#deploy-directly-from-git-repo)
+* [Deploy Directly from Git Repo](#deploy-directly-from-git-repo)
 * [Deploy from file](#deploy-from-file)
 * [To remove the app](#To-remove-the-app)
 
