@@ -1,35 +1,84 @@
 {
-  "Employees":[
+  "users": [
     {
-	"id": 0,	    
-	"employeeId": 100,
-	"firstName": "Bob",
-	"lastName": "Smith",
-	"email": "bob.smith@example.com",
-	"hireDate": "2020-10-16"
-}, 
-{
-	"id": 1,
-	"employeeId": 101,
-	"firstName": "Anna",
-	"lastName": "Lane",
-	"email": "anna.lane@example.com",
-	"hireDate": "2019-03-06"
-}, 
-{
-	"id": 2,
-	"employeeId": 102,
-	"firstName": "Pat",
-	"lastName": "Fay",
-	"email": "pat.fay@example.com",
-	"hireDate": "2018-03-06"
-}
+      "id": "8463",
+      "name": "Patrizio Tardiolo Bonifazi",
+      "username": "patrita63",
+      "email": "p.tardiolobonifazi@vivasoft.it",
+      "phone": "65486"
+    },
+    {
+      "id": "4b52",
+      "name": "diego de la vegas zorro",
+      "username": "zorrozorro",
+      "email": "zorro@zorro.com",
+      "phone": "1234567",
+      "role": {
+        "id": "2",
+        "name": "Writer",
+        "description": "Privilegi di lettura e scrittura"
+      }
+    },
+    {
+      "id": "cc3f",
+      "name": "diego de la vegas zorroit",
+      "username": "zorrozorroit",
+      "email": "zorro@zorro.it",
+      "phone": "12345678",
+      "role": {
+        "id": "3",
+        "name": "Reader",
+        "description": "Solo privilegi di lettura"
+      }
+    },
+    {
+      "id": "0981",
+      "name": "Patrizio Tardiolo Bonifazi",
+      "username": "patrita63",
+      "email": "patrita63@gmail.com",
+      "phone": "3482350751",
+      "role": {
+        "id": "2",
+        "name": "Writer",
+        "description": "Privilegi di lettura e scrittura"
+      }
+    },
+    {
+      "id": "db45",
+      "name": "diego de la vegas zorro",
+      "username": "zorrozorrode",
+      "email": "zorro@zorro.de",
+      "phone": "1234567",
+      "role": {
+        "id": "1",
+        "name": "Admin",
+        "description": "Amministratore"
+      }
+    }
   ],
-  "Companies" : [
+  "products": [
     {
-      "id": 0,
-      "Name": "AEY",
-      "Description": "Widget Distributor"
+      "id": "1",
+      "name": "Iphone",
+      "model": "12",
+      "cost": "1,000.00"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "description": "Amministratore"
+    },
+    {
+      "id": "2",
+      "name": "Writer",
+      "description": "Privilegi di lettura e scrittura"
+    },
+    {
+      "id": "3",
+      "name": "Reader",
+      "description": "Solo privilegi di lettura"
     }
   ]
 }
